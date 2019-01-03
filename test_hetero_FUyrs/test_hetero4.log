@@ -1,0 +1,125 @@
+SUGEN v8.9 (06/27/2018) starts at Wed Jan  2 19:44:32 2019
+
+Author: Ran Tao
+Email: r.tao@vanderbilt.edu
+Documentation & citation: https://github.com/dragontaoran/SUGEN
+
+The phenotype file is slope_residuals_model4_aa_wt_20181231.txt.
+The formula is invn_clean_slope_aa_wt_model4=.
+The suject ID column in the phenotype file is sampleid.
+The family ID column in the phenotype file is sampleid.
+
+The VCF file is /proj/epi/Genetic_Data_Center/whi_share/whi_1kgp3/AA/WHI_AA/chr22.dose.vcf.gz.
+Analyze dosage data in the VCF file.
+
+Unweighted analysis will be performed.
+
+The log file is test_hetero4.log.
+
+Perform linear regression.
+Allow residual variance in different groups (defined by flag_q_fu_wt_aa) to be different.
+Use model-based variance estimators.
+
+Perform Wald tests.
+Perform standard association analysis.
+The results file is test_hetero4.wald.out.
+
+Loading phenotype data...
+The phenotype file contains 4004 individual(s) with complete records.
+There are 0 covariate(s) included in the analysis.
+Done!
+
+Processing the VCF file...
+The VCF file contains 8410 individual(s).
+Done!
+
+Preparing analysis...
+In summary, 3999 individual(s) from 1 study (studies) are included in the analysis.
+Done!
+
+Start variant by variant analysis...
+22:16134585: Singular Variance Estimation!
+22:16134589: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16138638: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16153346: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16154880: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16170395: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16170724: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16179326: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16203103: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16205920: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16206174: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16211737: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16225632: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16229536: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16247163: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16255757: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16275415: Singular Variance Estimation!
+22:16290215: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16309349: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16313149: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16318335: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16324591: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16328160: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:16361409: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:18795005: Singular Variance Estimation!
+22:18802100: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:18802462: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:18803526: Singular Variance Estimation!
+22:18804347: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21587058: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21587824: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21588423: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589261: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589358: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589631: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589829: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589869: Singular Variance Estimation!
+22:21589876: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589877: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21589899: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21590057: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21591192: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21591311: Singular Variance Estimation!
+22:21591964: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21594432: Singular Variance Estimation!
+22:21595328: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21595473: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21596071: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21597044: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21601052: Singular Variance Estimation!
+22:21603209: Singular Variance Estimation!
+22:21604216: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21606391: Singular Variance Estimation!
+22:21608502: Singular Variance Estimation!
+22:21609082: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21610500: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21613206: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21613602: Singular Variance Estimation!
+22:21614518: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21614827: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21621731: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21621733: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21622062: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21626004: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21626028: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21626215: Singular Variance Estimation!
+22:21628939: In linear regression allowing heterogeneous variance, algorithm does not converge!
+22:21642248: Singular Variance Estimation!
+22:23556616: Singular Variance Estimation!
+22:27879292: Singular Variance Estimation!
+22:31301586: Singular Variance Estimation!
+22:33078871: Singular Variance Estimation!
+22:33275399: Singular Variance Estimation!
+22:33275535: Singular Variance Estimation!
+22:33282428: Singular Variance Estimation!
+22:33933839: Singular Variance Estimation!
+22:40348478: Singular Variance Estimation!
+22:40707679: Singular Variance Estimation!
+22:41836917: Singular Variance Estimation!
+22:45398466: Singular Variance Estimation!
+22:48224559: Singular Variance Estimation!
+Done!
+
+Program successfully finishes at Wed Jan  2 21:21:56 2019
+

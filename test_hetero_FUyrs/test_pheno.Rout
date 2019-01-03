@@ -1,0 +1,72 @@
+
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> rm(list=ls())
+> gc()
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 251622 13.5     460000 24.6   350000 18.7
+Vcells 440034  3.4    1023718  7.9   786404  6.0
+> 
+> FN.pheno = "/proj/epi/CVDGeneNas/justanne/WHI_wtchg/slope_residuals_model4_aa_wt.txt"
+> FN.out = "slope_residuals_model4_aa_wt_20181231.txt"
+> 
+> dat = read.table(FN.pheno, header=TRUE, as.is=TRUE, sep="\t")
+> table(dat$flag_q_fu_wt_aa, useNA="ifany")
+
+   1    2    3    4 
+1011  995 1004  994 
+> plot(dat$flag_q_fu_wt_aa, dat$FUyrs_wt)
+> 
+> mykurtosis = function (x) {
++     cx = x[which(is.na(x) == F)]
++     m4 = mean((cx-mean(cx))^4)
++     return(m4/(sd(cx)^4)-3)
++ }
+> 
+> mykurtosis(dat$clean_slope_aa_wt_model4)
+[1] 6.827538
+> clean_slope_aa_wt_model4.obs = which(!is.na(dat$clean_slope_aa_wt_model4))
+> clean_slope_aa_wt_model4.rank = rank(dat$clean_slope_aa_wt_model4[clean_slope_aa_wt_model4.obs], ties.method="average")
+> dat$invn_clean_slope_aa_wt_model4 = rep(NA, nrow(dat))
+> dat$invn_clean_slope_aa_wt_model4[clean_slope_aa_wt_model4.obs] = qnorm((clean_slope_aa_wt_model4.rank-3/8)/(length(clean_slope_aa_wt_model4.rank)+1/4))
+> qqnorm(dat$invn_clean_slope_aa_wt_model4, main="invn_clean_slope_aa_wt_model4")
+> qqline(dat$invn_clean_slope_aa_wt_model4)
+> mykurtosis(dat$invn_clean_slope_aa_wt_model4)
+[1] -0.01908613
+> 
+> cut_fuyrs = cut(dat$FUyrs_wt, breaks=quantile(dat$FUyrs_wt, probs=seq(0, 1, 1/10)), include.lowest = TRUE)
+> dat$flag_q_fu_wt_aa10 = NA
+> for (i in 1:10) {
++     dat$flag_q_fu_wt_aa10[cut_fuyrs == names(table(cut_fuyrs))[i]] = i
++ }
+> plot(dat$flag_q_fu_wt_aa10, dat$FUyrs_wt)
+> 
+> cut_fuyrs = cut(dat$FUyrs_wt, breaks=quantile(dat$FUyrs_wt, probs=seq(0, 1, 1/20)), include.lowest = TRUE)
+> dat$flag_q_fu_wt_aa20 = NA
+> for (i in 1:20) {
++     dat$flag_q_fu_wt_aa20[cut_fuyrs == names(table(cut_fuyrs))[i]] = i
++ }
+> plot(dat$flag_q_fu_wt_aa20, dat$FUyrs_wt)
+> 
+> write.table(dat, file=FN.out, sep="\t", quote=FALSE, row.names=FALSE)
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  0.529   0.049   0.628 

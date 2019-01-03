@@ -1,0 +1,82 @@
+SUGEN v8.9 (06/27/2018) starts at Wed Jan  2 19:44:31 2019
+
+Author: Ran Tao
+Email: r.tao@vanderbilt.edu
+Documentation & citation: https://github.com/dragontaoran/SUGEN
+
+The phenotype file is slope_residuals_model4_aa_wt_20181231.txt.
+The formula is invn_clean_slope_aa_wt_model4=.
+The suject ID column in the phenotype file is sampleid.
+The family ID column in the phenotype file is sampleid.
+
+The VCF file is /proj/epi/Genetic_Data_Center/whi_share/whi_1kgp3/AA/WHI_AA/chr22.dose.vcf.gz.
+Analyze dosage data in the VCF file.
+
+Unweighted analysis will be performed.
+
+The log file is test_hetero1.log.
+
+Perform linear regression.
+Use model-based variance estimators.
+
+Perform Wald tests.
+Perform standard association analysis.
+The results file is test_hetero1.wald.out.
+
+Loading phenotype data...
+The phenotype file contains 4004 individual(s) with complete records.
+There are 0 covariate(s) included in the analysis.
+Done!
+
+Processing the VCF file...
+The VCF file contains 8410 individual(s).
+Done!
+
+Preparing analysis...
+In summary, 3999 individual(s) from 1 study (studies) are included in the analysis.
+Done!
+
+Start variant by variant analysis...
+22:16134585: Singular Variance Estimation!
+22:16134589: Singular Variance Estimation!
+22:21587824: Singular Variance Estimation!
+22:21589631: Singular Variance Estimation!
+22:21589757: Singular Variance Estimation!
+22:21589829: Singular Variance Estimation!
+22:21589869: Singular Variance Estimation!
+22:21589876: Singular Variance Estimation!
+22:21589877: Singular Variance Estimation!
+22:21590560: Singular Variance Estimation!
+22:21591311: Singular Variance Estimation!
+22:21593247: Singular Variance Estimation!
+22:21595328: Singular Variance Estimation!
+22:21595473: Singular Variance Estimation!
+22:21596071: Singular Variance Estimation!
+22:21601052: Singular Variance Estimation!
+22:21603488: Singular Variance Estimation!
+22:21605654: Singular Variance Estimation!
+22:21606391: Singular Variance Estimation!
+22:21606648: Singular Variance Estimation!
+22:21613584: Singular Variance Estimation!
+22:21613602: Singular Variance Estimation!
+22:21614518: Singular Variance Estimation!
+22:21624907: Singular Variance Estimation!
+22:21626028: Singular Variance Estimation!
+22:21626215: Singular Variance Estimation!
+22:23556616: Singular Variance Estimation!
+22:27879292: Singular Variance Estimation!
+22:31301586: Singular Variance Estimation!
+22:33078871: Singular Variance Estimation!
+22:33275399: Singular Variance Estimation!
+22:33275535: Singular Variance Estimation!
+22:33282428: Singular Variance Estimation!
+22:33933839: Singular Variance Estimation!
+22:40348478: Singular Variance Estimation!
+22:40707679: Singular Variance Estimation!
+22:41836917: Singular Variance Estimation!
+22:45398466: Singular Variance Estimation!
+22:48224559: Singular Variance Estimation!
+Done!
+
+Program successfully finishes at Wed Jan  2 21:16:06 2019
+

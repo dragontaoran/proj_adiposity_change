@@ -1,0 +1,2 @@
+The goal is to investigate the inflation caused by the heterogeneous trait variances across follow-up years. See https://drive.google.com/drive/folders/1-PKhN2HKbsX4Y6RovRovVqg4gmsk2hKA.
+The conclusion is that this inflation is primarily caused by the heavy tails of the trait distribution (Kurtosis = 6.83). After I inverse normalize the trait, the inflation is gone. See compare.qq.png. 
