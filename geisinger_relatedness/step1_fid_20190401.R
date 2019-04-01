@@ -2,7 +2,7 @@ args = commandArgs(trailingOnly=TRUE)
 max.degree = as.integer(args[1])
 fn.out = args[2]
 
-fn = "corrected_weight_change_cohort_close_relationships_summary.txt"
+fn = "corrected_GHS_Freeze_90K_close_relationships_summary.txt"
 
 fi = read.table(fn, stringsAsFactors=FALSE, header=TRUE)
 print(paste("NOTE: #Pairs in ", fn, ": ", nrow(fi), sep=""))

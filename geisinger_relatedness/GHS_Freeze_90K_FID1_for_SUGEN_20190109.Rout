@@ -1,15 +1,15 @@
-[1] "NOTE: #Pairs in GHS_Freeze_90K_close_relationships_summary.txt: 224557"
-              RID1             RID2 MOST_LIKELY_REL degree
-1 9c1e52bb0a34bd80 75a6bab6d35124d4             CGH      3
-2 9c1e52bb0a34bd80 418d0e8c6ab08ea9             CGH      3
-3 9bf1f5a929b6cd37 9c1e52bb0a34bd80             CGH      3
-4 e78339e141be1234 9c1e52bb0a34bd80             CGH      3
-5 4ab2e1568d6003e3 a993904aed5edcda             CGH      3
-6 4ab2e1568d6003e3 ba79b23e556f6289             CGH      3
+[1] "NOTE: #Pairs in corrected_weight_change_cohort_close_relationships_summary.txt: 66209"
+              RID1             RID2 MOST_LIKELY_REL degree PI_HAT
+1 5422a26cc542c1b6 dd0d7b675673c34c             CGH      3 0.1477
+2 5422a26cc542c1b6 191b6f3f410b6ec1             CGH      3 0.1125
+3 ce74933d9a6c035c 5422a26cc542c1b6             CGH      3 0.1165
+4 89e3a30c20f44fe7 5422a26cc542c1b6             CGH      3 0.1076
+5 d1a07d4602e4f9f5 7c37f6d22d5a9844             CGH      3 0.1141
+6 d1a07d4602e4f9f5 606f21ab3404129b             CGH      3 0.1748
 
-     0      1      2      3 
-    43  26962 190053   7499 
-[1] "NOTE: # degree pairs: 27005"
+    0     1     2     3 
+   33 24770 36453  4953 
+[1] "NOTE: # degree pairs: 24803"
 [1] "NOTE: processed 100 pairs"
 [1] "NOTE: processed 200 pairs"
 [1] "NOTE: processed 300 pairs"
@@ -258,44 +258,20 @@
 [1] "NOTE: processed 24600 pairs"
 [1] "NOTE: processed 24700 pairs"
 [1] "NOTE: processed 24800 pairs"
-[1] "NOTE: processed 24900 pairs"
-[1] "NOTE: processed 25000 pairs"
-[1] "NOTE: processed 25100 pairs"
-[1] "NOTE: processed 25200 pairs"
-[1] "NOTE: processed 25300 pairs"
-[1] "NOTE: processed 25400 pairs"
-[1] "NOTE: processed 25500 pairs"
-[1] "NOTE: processed 25600 pairs"
-[1] "NOTE: processed 25700 pairs"
-[1] "NOTE: processed 25800 pairs"
-[1] "NOTE: processed 25900 pairs"
-[1] "NOTE: processed 26000 pairs"
-[1] "NOTE: processed 26100 pairs"
-[1] "NOTE: processed 26200 pairs"
-[1] "NOTE: processed 26300 pairs"
-[1] "NOTE: processed 26400 pairs"
-[1] "NOTE: processed 26500 pairs"
-[1] "NOTE: processed 26600 pairs"
-[1] "NOTE: processed 26700 pairs"
-[1] "NOTE: processed 26800 pairs"
-[1] "NOTE: processed 26900 pairs"
-[1] "NOTE: processed 27000 pairs"
-[1] 35574
+[1] 33323
 [1] "NOTE: Distribution of famliy size:"
 group.num
    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17 
-7903 2562  967  460  236  166   99   52   40   19   18   20   10   13    4    3 
-  18   19   20   22   24   26   27   28   32   34 
-   5    1    8    1    1    3    2    1    1    1 
-[1] "NOTE: Number of families: 12596"
+7586 2464  896  421  228  132   81   45   41   13   15   15    9    9    2    3 
+  18   19   20   21   22   26   28   32 
+   2    4    4    1    2    4    1    2 
+[1] "NOTE: Number of families: 11980"
 [1] "NOTE: Distribution of famliy size:"
 
     1     2     3     4     5     6     7     8     9    10    11    12    13 
-46439  7903  2562   967   460   236   166    99    52    40    19    18    20 
-   14    15    16    17    18    19    20    22    24    26    27    28    32 
-   10    13     4     3     5     1     8     1     1     3     2     1     1 
-   34 
-    1 
+16101  7586  2464   896   421   228   132    81    45    41    13    15    15 
+   14    15    16    17    18    19    20    21    22    26    28    32 
+    9     9     2     3     2     4     4     1     2     4     1     2 
 > proc.time()
     user   system  elapsed 
-7697.607    1.160 7700.381 
+5242.594    1.405 5244.913 
